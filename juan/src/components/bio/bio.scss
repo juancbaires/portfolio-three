@@ -1,0 +1,17 @@
+.bio-container {
+  // margin-top: 150px;
+  // height: 100vh;
+  .bio {
+    height: 700px;
+    width: 100%;
+  }
+  h3 {
+    // color: white;
+    margin-top: 0;
+    color: darken(white, 16%);
+    text-align: center;
+    padding: 15px;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
