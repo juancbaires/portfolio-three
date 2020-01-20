@@ -5,7 +5,7 @@ class Bio extends Component {
   render() {
     return (
       <div id="first" className="bio-container">
-        <h3>Experience</h3>
+        <h3>Work Experience</h3>
         <Timeline></Timeline>
       </div>
     );

@@ -5,7 +5,7 @@ import hand from "../../images/wavingHand.png";
 class navbar extends Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar" id="mi-casa">
         <div className="navbar_content">
           <div className="navbar_header">
             <h3 id="title-effect">Hi, I'm Juan</h3>

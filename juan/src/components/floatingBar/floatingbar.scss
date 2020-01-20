@@ -1,0 +1,73 @@
+.floatingbar {
+  float: right;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: transparent;
+  ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+    height: 100vh;
+
+    li {
+      //   top: 50%;
+      text-align: center;
+      position: relative;
+      //   height: 90px;
+      width: 90px;
+      cursor: pointer;
+      background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)),
+        transparent;
+      text-transform: uppercase;
+      transition: all 0.4s ease-out;
+      padding: 32px 12px;
+      color: #fff;
+      //   margin: 0 auto;
+      &:after {
+        padding-top: 30px;
+        position: absolute;
+        background: white;
+        color: #3b5fa1;
+        top: 0;
+        right: 70px;
+        width: 90px;
+        height: 70%;
+        opacity: 0.5;
+        transform: perspective(400px) rotateY(-90deg);
+        transform-origin: 100% 0;
+        transition: all 0.4s ease-out;
+      }
+    }
+  }
+  .first-li:after {
+    content: "Home";
+    line-height: 32px;
+  }
+  .second-li:after {
+    content: "About";
+    line-height: 32px;
+  }
+  .third-li:after {
+    content: "Work";
+    line-height: 32px;
+  }
+  .fourth-li:after {
+    content: "Say hi";
+    line-height: 32px;
+  }
+  ul li:hover {
+    transform: translateX(70px);
+  }
+  ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+  }
+}
+
+.hide-floater {
+  display: none;
+}

@@ -5,7 +5,7 @@
   margin-top: 0;
   height: 100vh;
   background-image: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)),
-    url("../../images/headshot.jpg");
+    url("../../images/portrait.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
         width: 500px;
         font-size: 22px;
         color: #eeeeee;
-        margin-top: -30px;
+        margin-top: -40px;
       }
       h3 {
         font-size: 60px;
@@ -169,6 +169,7 @@
     justify-content: center;
     text-decoration: none;
     color: #fff;
+    margin-left: 9%;
     // margin-bottom: 30px;
     i {
       &:hover {
