@@ -109,6 +109,9 @@
       }
     }
     .header_action_call {
+      @media screen and (max-width: 976px) {
+        width: 100%;
+      }
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -164,6 +167,9 @@
     }
   }
   .carrot-down {
+    @media screen and (max-width: 976px) {
+      margin: 40px;
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;

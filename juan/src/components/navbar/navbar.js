@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./navbar.scss";
-import hand from "../../images/wavingHand.png";
 class navbar extends Component {
   render() {
     return (
@@ -12,8 +11,6 @@ class navbar extends Component {
             <p className="navbar_subheader">
               Full Stack Web Developer - Freelancer
             </p>
-            {/* <img src={hand} alt="waving hand" /> */}
-            {/* <nav>header</nav> */}
           </div>
           <p>
             I'm a Web Developer specializing in custom websites using React,
@@ -22,16 +19,16 @@ class navbar extends Component {
           </p>
           <span className="header_socialIcons">
             <a href="#" className="iconFacebook">
-              <i class="fab fa-facebook-square fa-lg"></i>
+              <i className="fab fa-facebook-square fa-lg"></i>
             </a>
             <a href="#" className="iconLinkedIn">
-              <i class="fab fa-linkedin fa-lg"></i>
+              <i className="fab fa-linkedin fa-lg"></i>
             </a>
             <a href="#" className="iconTwitter">
-              <i class="fab fa-twitter-square fa-lg"></i>
+              <i className="fab fa-twitter-square fa-lg"></i>
             </a>
             <a href="#" className="iconYoutube">
-              <i class="fab fa-youtube-square fa-lg"></i>
+              <i className="fab fa-youtube-square fa-lg"></i>
             </a>
           </span>
           <span className="header_action_call">

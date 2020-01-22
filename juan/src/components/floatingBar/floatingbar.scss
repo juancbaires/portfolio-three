@@ -1,4 +1,7 @@
 .floatingbar {
+  @media screen and (max-width: 976px) {
+    display: none;
+  }
   float: right;
   position: sticky;
   top: 0;
