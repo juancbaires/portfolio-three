@@ -18,29 +18,29 @@ class navbar extends Component {
             presence or an employer looking to hire, let's connect.
           </p>
           <span className="header_socialIcons">
-            <a href="#" className="iconFacebook">
+            <a href="www.facebook.com" className="iconFacebook">
               <i className="fab fa-facebook-square fa-lg"></i>
             </a>
-            <a href="#" className="iconLinkedIn">
+            <a href="www.linkedin.com" className="iconLinkedIn">
               <i className="fab fa-linkedin fa-lg"></i>
             </a>
-            <a href="#" className="iconTwitter">
+            <a href="www.twitter.com" className="iconTwitter">
               <i className="fab fa-twitter-square fa-lg"></i>
             </a>
-            <a href="#" className="iconYoutube">
+            <a href="www.youtube.com" className="iconYoutube">
               <i className="fab fa-youtube-square fa-lg"></i>
             </a>
           </span>
           <span className="header_action_call">
-            <a href="#" className="resume_btn">
+            <a href="my.resume.com" className="resume_btn">
               My Resume
             </a>
-            <a href="#" className="contact_btn">
+            <a href="something.com" className="contact_btn">
               Contact Me
             </a>
           </span>
         </div>
-        <Link to="bio-container" smooth={true} offset={0} duration={500}>
+        <Link to="first" smooth={true} offset={0} duration={500}>
           <p className="carrot-down">
             <i className="fas fa-arrow-down fa-3x"></i>
           </p>

@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Floatingbar></Floatingbar>
       <Navbar></Navbar>
-      <Bio></Bio>
       <About></About>
+      <Bio></Bio>
     </div>
   );
 }
