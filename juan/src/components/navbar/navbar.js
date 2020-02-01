@@ -40,7 +40,7 @@ class navbar extends Component {
             </a>
           </span>
         </div>
-        <Link to="first" smooth={true} offset={0} duration={500}>
+        <Link to="#first" smooth={true} offset={0} duration={500}>
           <p className="carrot-down">
             <i className="fas fa-arrow-down fa-3x"></i>
           </p>

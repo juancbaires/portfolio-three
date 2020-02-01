@@ -5,7 +5,6 @@ export default class about extends Component {
   render() {
     return (
       <div className="about_wrapper">
-        <aside className="about_wrapper_image"></aside>
         <article className="about_wrapper_content">
           <div className="about-bio">
             <div className="about-bio-image"></div>
