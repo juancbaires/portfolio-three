@@ -1,9 +1,10 @@
 .navbar {
+  height: 100%;
   font-family: "Source Sans Pro", sans-serif;
-  width: 100vw;
-  padding: 15px;
+  // width: 100vw;
+  padding: 100px 15px;
   margin-top: 0;
-  // height: 100vh;
+  padding-bottom: 135px;
   background-image: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)),
     url("../../images/portrait.jpg");
   background-size: cover;
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    // height: 720px;
 
     .navbar_header {
       display: flex;
@@ -38,6 +39,7 @@
         // width: 300px;
       }
       @media screen and (max-width: 676px) {
+        max-width: 100%;
         text-align: center;
         .navbar_subheader {
           text-align: center;
@@ -67,7 +69,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 200px;
+      width: 230px;
 
       a.iconFacebook:hover {
         background-color: darken(#3b5998, 3%);
@@ -85,7 +87,7 @@
       a {
         color: #fff;
         text-decoration: none;
-        margin-right: 4px;
+        // margin-right: 4px;
         width: 50px;
         height: 50px;
         display: block;
@@ -154,7 +156,7 @@
     }
     // Media queries mobile
     @media (max-width: 1296px) {
-      align-items: center;
+      align-items: left;
       height: fit-content;
       padding-left: 15px;
       padding-right: 15px;
@@ -165,65 +167,74 @@
         width: 100% !important;
       }
     }
-  }
-  .carrot-down {
-    @media screen and (max-width: 976px) {
-      margin: 40px;
+    .link_wrapper {
+      width: 100% !important;
+      clear: both;
     }
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-    color: #fff;
-    margin-left: 9%;
-    // margin-bottom: 30px;
-    i {
-      &:hover {
-        cursor: pointer;
-        opacity: 0.6;
+    .carrot-down {
+      width: 100% !important;
+      clear: both;
+      margin-left: 3.5%;
+      @media screen and (max-width: 976px) {
+        margin-top: 60px;
+        margin-left: 0;
       }
-      border: 2px solid #fff;
-      border-radius: 50%;
-      padding: 5px 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-decoration: none;
+      // align-self: top;
+      color: #fff;
+      // margin-bottom: 30px;
 
-      animation: bounce 1.5s infinite; //other browsers
-      -webkit-animation: bounce 1.5s infinite; //webkit browsers
-      -moz-animation: bounce 1.5s infinite; //firefox
-      -o-animation: bounce 1.5s infinite; //opera
-      @-webkit-keyframes bounce {
-        0%,
-        100% {
-          -webkit-transform: translateY(0);
+      i {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
         }
-        50% {
-          -webkit-transform: translateY(-10px);
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px 10px;
+
+        animation: bounce 1.5s infinite; //other browsers
+        -webkit-animation: bounce 1.5s infinite; //webkit browsers
+        -moz-animation: bounce 1.5s infinite; //firefox
+        -o-animation: bounce 1.5s infinite; //opera
+        @-webkit-keyframes bounce {
+          0%,
+          100% {
+            -webkit-transform: translateY(0);
+          }
+          50% {
+            -webkit-transform: translateY(-10px);
+          }
         }
-      }
-      @-moz-keyframes bounce {
-        0%,
-        100% {
-          -moz-transform: translateY(0);
+        @-moz-keyframes bounce {
+          0%,
+          100% {
+            -moz-transform: translateY(0);
+          }
+          50% {
+            -moz-transform: translateY(-10px);
+          }
         }
-        50% {
-          -moz-transform: translateY(-10px);
+        @-o-keyframes bounce {
+          0%,
+          100% {
+            -o-transform: translateY(0);
+          }
+          50% {
+            -o-transform: translateY(-10px);
+          }
         }
-      }
-      @-o-keyframes bounce {
-        0%,
-        100% {
-          -o-transform: translateY(0);
-        }
-        50% {
-          -o-transform: translateY(-10px);
-        }
-      }
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
         }
       }
     }

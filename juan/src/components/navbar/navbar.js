@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import * as Scroll from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import "./navbar.scss";
 class navbar extends Component {
   render() {
@@ -39,12 +40,14 @@ class navbar extends Component {
               Contact Me
             </a>
           </span>
+          {/* <div className="link_wrapper">
+            <Link to="bio-container" smooth={true} offset={0} duration={500}>
+              <p className="carrot-down">
+                <i className="fas fa-arrow-down fa-2x"></i>
+              </p>
+            </Link>
+          </div> */}
         </div>
-        <Link to="#first" smooth={true} offset={0} duration={500}>
-          <p className="carrot-down">
-            <i className="fas fa-arrow-down fa-3x"></i>
-          </p>
-        </Link>
       </div>
     );
   }

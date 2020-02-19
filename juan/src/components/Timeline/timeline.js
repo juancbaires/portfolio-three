@@ -55,7 +55,11 @@ export default class extends Component {
             <div className="content">
               <h4>
                 Dec 2019-Current Web Developer @{" "}
-                <a href="https://www.socialdriver.com/" target="_blank">
+                <a
+                  href="https://www.socialdriver.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Social Driver
                 </a>
               </h4>
