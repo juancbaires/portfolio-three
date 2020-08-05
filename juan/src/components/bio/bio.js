@@ -4,7 +4,7 @@ import "./bio.scss";
 class Bio extends Component {
   render() {
     return (
-      <div id="first" className="bio-container">
+      <div id="my-work" className="bio-container">
         <h3>Work Experience</h3>
         <Timeline></Timeline>
       </div>

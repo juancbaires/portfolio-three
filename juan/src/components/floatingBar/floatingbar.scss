@@ -1,4 +1,6 @@
 .floatingbar {
+  z-index: 212121211212;
+
   @media screen and (max-width: 1076px) {
     display: none;
   }
@@ -7,6 +9,11 @@
   top: 0;
   left: 0;
   background: transparent;
+  &.fixed-nav {
+    position: fixed !important;
+    right: 0px;
+    left: auto;
+  }
   ul {
     list-style: none;
     text-align: center;

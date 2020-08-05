@@ -1,14 +1,28 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./floatingbar.scss";
+
 export default class floatingbar extends Component {
   state = {
-    mobileWidth: ""
+    mobileWidth: "",
+    floatingPosition: "",
+  };
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 20) {
+      this.setState({ floatingPosition: "fixed-nav" });
+    } else {
+      this.setState({ floatingPosition: "" });
+    }
   };
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
   render() {
     return (
-      <div className={`floatingbar ${this.state.mobileWidth}`}>
+      <div
+        className={`floatingbar ${this.state.mobileWidth}${this.state.floatingPosition}`}
+      >
         <ul>
           <Link to="mi-casa" smooth={true} offset={0} duration={500}>
             <li className="first-li">

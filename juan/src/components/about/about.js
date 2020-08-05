@@ -4,7 +4,7 @@ import "./about.scss";
 export default class about extends Component {
   render() {
     return (
-      <div className="about_wrapper">
+      <div id="first" className="about_wrapper">
         <div className="about-bio">
           {/* <div className="about-bio-image"></div> */}
           <div className="about-bio-image"></div>

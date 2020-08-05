@@ -6,16 +6,33 @@
   margin-top: 0;
   padding-bottom: 135px;
   background-image: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)),
-    url("../../images/portrait.jpg");
+    url("");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -112;
+  &:before {
+    content: "";
+    background-image: url(../../images/line-overlay--homepage.png);
+    background-size: cover;
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    visibility: visible;
+    z-index: 1;
+  }
 
   .navbar_content {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     // height: 720px;
 
     .navbar_header {
@@ -70,6 +87,7 @@
       flex-direction: row;
       justify-content: space-between;
       width: 230px;
+      z-index: 212121211212;
 
       a.iconFacebook:hover {
         background-color: darken(#3b5998, 3%);
@@ -96,6 +114,8 @@
         line-height: 50px;
         border-radius: 50%;
         -webkit-border-radius: 50%;
+        z-index: 212121211212;
+
         &:hover {
           background: darken(#eeeeee, 30%);
           -moz-transform: rotate(360deg);
@@ -118,6 +138,8 @@
       flex-direction: row;
       justify-content: space-between;
       max-width: 300px;
+      z-index: 212121211212;
+
       a:hover {
         cursor: pointer;
       }
@@ -133,6 +155,8 @@
         font-size: 16px;
         font-weight: 600;
         text-decoration: none;
+        z-index: 212121211212;
+
         &:hover {
           opacity: 0.75;
         }
@@ -149,6 +173,8 @@
         font-size: 16px;
         font-weight: 600;
         text-decoration: none;
+        z-index: 212121211212;
+
         &:hover {
           opacity: 0.75;
         }
