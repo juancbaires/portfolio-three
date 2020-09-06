@@ -17,6 +17,7 @@ export default class about extends Component {
             work are essential to my approach, and guided me during my Army
             service. I am able to adapt and overcome any problem at hand.
           </div>
+          {/* <github-card data-user="juancbaires"></github-card> */}
         </div>
       </div>
     );

@@ -4,10 +4,13 @@
   @media screen and (max-width: 1076px) {
     display: none;
   }
-  float: right;
-  position: sticky;
-  top: 0;
-  left: 0;
+  // float: right;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  position: fixed !important;
+  right: 0px;
+  left: auto;
   background: transparent;
   &.fixed-nav {
     position: fixed !important;

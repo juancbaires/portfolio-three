@@ -35,7 +35,7 @@ export default class floatingbar extends Component {
             </li>
           </Link>
 
-          <Link to="my-work" smooth={true} offset={0} duration={500}>
+          <Link to="project-cards" smooth={true} offset={0} duration={500}>
             <li className="third-li">
               <i className="fas fa-laptop-code fa-2x"></i>
             </li>
